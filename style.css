@@ -41,6 +41,15 @@ p {
     margin: 20px;
 }
 
+.navbar-alt {
+    float: right;
+    margin: 2em;
+    color: #a3a3a3;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+
 label, p {
     color: white;
     font-size: 24px;
@@ -53,6 +62,7 @@ input:checked ~ .hand {
 input {
     transform: scale(4);
     transform-origin: 50% 100%;
+    cursor: pointer;
 }
 
 .click-counter {
