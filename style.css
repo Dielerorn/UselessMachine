@@ -1,0 +1,56 @@
+body {
+    background: hsl(200, 76%, 25%);
+}
+
+.content {
+    height: 80vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+    margin: 20px;
+}
+
+.wrapper {
+    text-align: center;
+    position: relative;
+}
+.hand {
+    color: white;
+    position: absolute;
+    line-height: 1;
+    pointer-events: none;
+    font-size: calc(2em + 8vw);
+    transition: transform .25s ease;
+    top: 0;
+    left: 50%;
+    margin-left: -.35em;
+    transform-origin: 36% 0%;
+    transform: rotate(180deg) translateY(70vh);
+}
+
+p {
+    margin: 20px;
+}
+
+label, p {
+    color: white;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+
+input:checked ~ .hand {
+    transform: rotate(180deg);
+}
+input {
+    transform: scale(4);
+    transform-origin: 50% 100%;
+}
