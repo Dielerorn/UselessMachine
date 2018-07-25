@@ -15,16 +15,17 @@
 
 <body>
   <div id="body">
-    <h1>Useless Machine</h1>
+    <h1 class="hvr-grow-rotate">Useless Machine</h1>
     <div class="content" id="root">
       <div class="wrapper">
         <input @click="counter++" type="checkbox" id="useless">
         <br>
         <label for="useless">Check Me</label>
         <div class="fas fa-hand-pointer hand" id="hand"></div>
+        <br>
+        <p class="hvr-sweep-to-right click-counter">Times clicked: {{ counter }}</p>
       </div>
     </div>
-    <p>Times clicked: {{ counter }}</p>
   </div>
 </body>
 
